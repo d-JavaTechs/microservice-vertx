@@ -1,14 +1,12 @@
-package pn.eric.micservice;
+package pn.eric.micservice.core;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Handler;
 import io.vertx.core.Vertx;
 import io.vertx.core.http.HttpServer;
+import io.vertx.core.http.HttpServerRequest;
 import io.vertx.core.http.HttpServerResponse;
 
-/**
- * Hello world!
- *
- */
 public class HttpServerBasic
 {
     public static void main( String[] args )
@@ -19,9 +17,8 @@ public class HttpServerBasic
             // This handler gets called for each request that arrives on the server
             HttpServerResponse response = request.response();
             response.putHeader("content-type", "text/plain");
-
             // Write to the response and end it
-            response.end("Hello World!");
+            response.end("requestHandler1!");
         });
         server.listen(8080);
     }

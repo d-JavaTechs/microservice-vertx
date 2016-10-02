@@ -24,8 +24,8 @@
 
     <dependency>
       <groupId>io.vertx</groupId>
-      <artifactId>vertx-web</artifactId>
-      <version>3.3.2</version>
+      <artifactId>vertx-core</artifactId>
+      <version>3.3.3</version>
     </dependency>
   </dependencies>
 </project>
